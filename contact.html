@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img src="logo.webp" alt="Gym Logo" width="50" height="50"></a>
+                <span>Royal Fitness Club</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coach1.html">Coaches</a></li>
+                <li><a href="price.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+            <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="coach1.html" onclick="toggleMenu()">Coaches</a></li>
+                <li><a href="price.html" onclick="toggleMenu()">Prices</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Contact Us</h1>
+        <form action="https://formspree.io/f/mzddpyel" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <div class="info">
+            <div class="phonecontact">
+                <img src="phone.webp" alt="Gold phone icon for contacting the gym by telephone" width="60" height="60">
+                <h3>Phone</h3>
+                <p>+355 123 456 789</p>
+            </div>
+            <hr>
+            <div class="emailcontact">
+                <img src="email.webp" alt="Gold envelope icon representing email contact method" width="60" height="60">
+                <h3>Email</h3>
+                <p>contact@gym.com</p>
+            </div>
+            <hr>
+            <div class="locationcontact">
+                <img src="location.webp" alt="Gold location pin icon indicating gym physical address" width="60" height="60">
+                <h3>Location</h3>
+                <p>123 Fitness Street, Health City</p>
+            </div>
+        </div>    
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coach 1</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="coach1.css">
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img src="logo.webp" alt="Gym Logo" width="50" height="50"></a>
+                <span>Royal Fitness Club</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coach1.html">Coaches</a></li>
+                <li><a href="price.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+            <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="coach1.html" onclick="toggleMenu()">Coaches</a></li>
+                <li><a href="price.html" onclick="toggleMenu()">Prices</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        <div id="certModal" class="cert-modal">
+            <div class="cert-content">
+                <span class="close-btn" onclick="closeCerts()">x</span>
+
+                <h3>Certifikata & Diploma</h3>
+
+                <div class="certs">
+                    <img src="certificate.webp" alt="Certificate">
+                    <img src="certificate.webp" alt="Certificate">
+                    <img src="certificate.webp" alt="Certificate">
+                    <img src="certificate.webp" alt="Certificate">
+                    <img src="certificate.webp" alt="Certificate">
+                    <img src="certificate.webp" alt="Certificate">
+                </div>
+            </div>
+        </div>
+        <h1>Personal Trainers</h1>
+        <img src="coach.webp" class="coachimg">
+        <h2>Personal Trainer</h2>
+        <p>Trajner profesionist fitnesi me fokus ne progres real, disipline dhe rezultate afatgjata.<br>
+            Cdo program pershtatet sipas nivelit dhe objektivave te klientit.
+        </p>
+        <ul>
+            <li>Plane stervitore te pershtatura individualisht</li>
+            <li>Fokus ne teknike, force dhe progres te sigurt</li>
+            <li>Mbikeqyrje dhe motivim gjate cdo seance</li>
+        </ul>
+        <button class="cert-btn" onclick="openCerts()">Certifikata & Diploma</button>
+
+        <img src="coach.webp" class="seccoachimg">
+        <h2 class="sech2">Personal Trainer</h2>
+        <p class="secp">Trajner profesionist fitnesi me fokus ne progres real, disipline dhe rezultate afatgjata.<br>
+            Cdo program pershtatet sipas nivelit dhe objektivave te klientit.
+        </p>
+        <ul class="secul">
+            <li>Plane stervitore te pershtatura individualisht</li>
+            <li>Fokus ne teknike, force dhe progres te sigurt</li>
+            <li>Mbikeqyrje dhe motivim gjate cdo seance</li>
+        </ul> 
+        <button class="secbtn" onclick="openCerts()">Certifikata & Diploma</button>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rreth Nesh</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img src="logo.webp" alt="Gym Logo" width="50" height="50"></a>
+                <span>Royal Fitness Club</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coach1.html">Coaches</a></li>
+                <li><a href="price.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+            <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="coach1.html" onclick="toggleMenu()">Coaches</a></li>
+                <li><a href="price.html" onclick="toggleMenu()">Prices</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Rreth Nesh</h1>
+        <p>Historia e Royal Fitness Club fillon 10 vite më parë me një vizion të thjeshtë:<br>
+            të krijohet një vend ku çdo person mund të arrijë potencialin e tij maksimal fizik.<br>
+            Nga fillimi, kemi besuar se cilësia dhe pajisjet e sakta janë çelësi i rezultateve reale,<br>
+            prandaj zgjodhëm PANATTA, markën më të njohur për makineri dhe aksesorë të avancuar.<br>
+            Por një palestër nuk bëhet vetëm nga makineritë ajo bëhet nga njerëzit që e drejtojnë.<br>
+            Instruktorët tanë profesionistë, me përvojë dhe pasion,<br>
+            janë këtu për t'ju udhëhequr në çdo hap, duke siguruar stërvitje të sigurt dhe efektive.<br>
+            Sot, Royal Fitness Club është më shumë se një palestër është një komunitet<br>
+            i dedikuar për forcë, disiplinë dhe përparim të vazhdueshëm.<br>
+            Çdo stërvitje këtu është një hap drejt versionit më të mirë të vetes.
+        </p>
+        <script src="script.js"></script>
+    </body>
+</html>

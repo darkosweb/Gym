@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <nav>
+            <div class="nav-left">
+                <a href="index.html"><img src="logo.webp" alt="Gym Logo" width="50" height="50"></a>
+                <span>Royal Fitness Club</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="coach1.html">Coaches</a></li>
+                <li><a href="price.html">Prices</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <!-- Full-screen mobile menu overlay -->
+        <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+            <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="coach1.html" onclick="toggleMenu()">Coaches</a></li>
+                <li><a href="price.html" onclick="toggleMenu()">Prices</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+        <h1>Royal Fitness Club</h1>
+        <p>Royal Fitness Club është një palestër moderne me mbi 10 vite eksperiencë,<br>
+            e pajisur me makineri dhe aksesorë premium PANATTA,të dizajnuara për forcë, siguri dhe rezultate maksimale.<br>
+            Me instruktorë profesionistë dhe shumë të kualifikuar, çdo stërvitje është e orientuar drejt progresit real.<br>
+            Zgjedhja ideale për ata që kërkojnë palestër profesionale,pajisje cilësore dhe rezultate të garantuara.
+        </p>
+        <a href="price.html"><button>Cmimet</button></a>
+        <script src="script.js"></script>
+    </body>
+</html>

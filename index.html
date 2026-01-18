@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emri Palestres</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="overlay"></div>
+        
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-left">
+                <a href="#home"><img src="logo.webp" alt="Gym Logo" width="50" height="50"></a>
+                <span>Emri Palestres</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#coaches">Coaches</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu(event)" aria-label="Open menu" role="button" tabindex="0">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <!-- Full-screen mobile menu overlay -->
+        <div id="menuOverlay" class="menu-overlay" aria-hidden="true">
+            <button class="close-btn" onclick="toggleMenu()" aria-label="Close menu">&times;</button>
+            <ul>
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#coaches" onclick="toggleMenu()">Coaches</a></li>
+                <li><a href="#prices" onclick="toggleMenu()">Prices</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- HOME SECTION -->
+        <section id="home" class="section home-section" style="background-image: url('home.webp');">
+            <h1>Emri Palestres</h1>
+            <p>Emri Palestres është një palestër moderne me mbi 10 vite eksperiencë,<br>
+                e pajisur me makineri dhe aksesorë premium PANATTA, të dizajnuara për forcë, siguri dhe rezultate maksimale.<br>
+                Me instruktorë profesionistë dhe shumë të kualifikuar, çdo stërvitje është e orientuar drejt progresit real.<br>
+                Zgjedhja ideale për ata që kërkojnë palestër profesionale, pajisje cilësore dhe rezultate të garantuara.
+            </p>
+            <a href="#prices"><button>Cmimet</button></a>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section about-section" style="background-image: url('about.webp');">
+            <h1>Rreth Nesh</h1>
+            <p>Historia e Emri Palestres fillon 10 vite më parë me një vizion të thjeshtë:<br>
+                të krijohet një vend ku çdo person mund të arrijë potencialin e tij maksimal fizik.<br>
+                Nga fillimi, kemi besuar se cilësia dhe pajisjet e sakta janë çelësi i rezultateve reale,<br>
+                prandaj zgjodhëm PANATTA, markën më të njohur për makineri dhe aksesorë të avancuar.<br>
+                Por një palestër nuk bëhet vetëm nga makineritë ajo bëhet nga njerëzit që e drejtojnë.<br>
+                Instruktorët tanë profesionistë, me përvojë dhe pasion,<br>
+                janë këtu për t'ju udhëhequr në çdo hap, duke siguruar stërvitje të sigurt dhe efektive.<br>
+                Sot, Emri Palestres është më shumë se një palestër është një komunitet<br>
+                i dedikuar për forcë, disiplinë dhe përparim të vazhdueshëm.<br>
+                Çdo stërvitje këtu është një hap drejt versionit më të mirë të vetes.
+            </p>
+        </section>
+
+        <!-- COACHES SECTION -->
+        <section id="coaches" class="section coaches-section" style="background-image: url('coaches.webp');">
+            <div id="certModal" class="cert-modal">
+                <div class="cert-content">
+                    <span class="close-btn" onclick="closeCerts()">x</span>
+                    <h3>Certifikata & Diploma</h3>
+                    <div class="certs">
+                        <img src="certificate.webp" alt="Certificate">
+                        <img src="certificate.webp" alt="Certificate">
+                        <img src="certificate.webp" alt="Certificate">
+                        <img src="certificate.webp" alt="Certificate">
+                        <img src="certificate.webp" alt="Certificate">
+                        <img src="certificate.webp" alt="Certificate">
+                    </div>
+                </div>
+            </div>
+            
+            <h1>Personal Trainers</h1>
+            
+            <div class="coach-container">
+                <img src="coach.webp" class="coachimg" alt="Coach 1">
+                <div class="coach-info">
+                    <h2>Personal Trainer</h2>
+                    <p>Trajner profesionist fitnesi me fokus ne progres real, disipline dhe rezultate afatgjata.<br>
+                        Cdo program pershtatet sipas nivelit dhe objektivave te klientit.
+                    </p>
+                    <ul>
+                        <li>Plane stervitore te pershtatura individualisht</li>
+                        <li>Fokus ne teknike, force dhe progres te sigurt</li>
+                        <li>Mbikeqyrje dhe motivim gjate cdo seance</li>
+                    </ul>
+                    <button class="cert-btn" onclick="openCerts()">Certifikata & Diploma</button>
+                </div>
+            </div>
+
+            <div class="coach-container coach-container-reverse">
+                <img src="coach.webp" class="seccoachimg" alt="Coach 2">
+                <div class="coach-info">
+                    <h2>Personal Trainer</h2>
+                    <p>Trajner profesionist fitnesi me fokus ne progres real, disipline dhe rezultate afatgjata.<br>
+                        Cdo program pershtatet sipas nivelit dhe objektivave te klientit.
+                    </p>
+                    <ul>
+                        <li>Plane stervitore te pershtatura individualisht</li>
+                        <li>Fokus ne teknike, force dhe progres te sigurt</li>
+                        <li>Mbikeqyrje dhe motivim gjate cdo seance</li>
+                    </ul>
+                    <button class="cert-btn" onclick="openCerts()">Certifikata & Diploma</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICES SECTION -->
+        <section id="prices" class="section prices-section" style="background-image: url('prices.webp');">
+            <h1>Abonimet</h1>
+            <div class="abonimet">
+                <div class="njemuj">
+                    <h3>1 Mujor</h3>
+                    <h4>Meshkuj</h4>
+                    <ul>
+                        <li>3xJave - 4000L</li>
+                        <li>5xJave - 5500L</li>
+                        <li>7xJave - 6000L</li>
+                    </ul>
+                    <h4>Femra</h4>
+                    <ul>
+                        <li>3xJave - 3500L</li>
+                        <li>5xJave - 5000L</li>
+                        <li>7xJave - 5500L</li>
+                    </ul>
+                </div>
+                <div class="tremuj">
+                    <h3>3 Mujor</h3>
+                    <h4>Meshkuj</h4>
+                    <ul>
+                        <li>3xJave - 10,000L</li>
+                        <li>5xJave - 13,000L</li>
+                        <li>7xJave - 14,500L</li>
+                    </ul>
+                    <h4>Femra</h4>
+                    <ul>
+                        <li>3xJave - 9000L</li>
+                        <li>5xJave - 12,000L</li>
+                        <li>7xJave - 13,500L</li>
+                    </ul>
+                </div>
+                <div class="gjashtemuj">
+                    <h3>6 Mujor</h3>
+                    <h4>Meshkuj</h4>
+                    <ul>
+                        <li>3xJave - 19,000L</li>
+                        <li>5xJave - 22,000L</li>
+                        <li>7xJave - 26,000L</li>
+                    </ul>
+                    <h4>Femra</h4>
+                    <ul>
+                        <li>3xJave - 17,000L</li>
+                        <li>5xJave - 20,000L</li>
+                        <li>7xJave - 24,000L</li>
+                    </ul>
+                </div>
+                <div class="njevit">
+                    <h3>1 Vjecar</h3>
+                    <h4>Meshkuj</h4>
+                    <ul>
+                        <li>3xJave - 25,000L</li>
+                        <li>5xJave - 29,000L</li>
+                        <li>7xJave - 34,000L</li>
+                    </ul>
+                    <h4>Femra</h4>
+                    <ul>
+                        <li>3xJave - 22,000L</li>
+                        <li>5xJave - 26,000L</li>
+                        <li>7xJave - 31,000L</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact-section" style="background-image: url('contact.webp');">
+            <h1>Contact Us</h1>
+            <form action="" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            <div class="info">
+                <div class="phonecontact">
+                    <img src="phone.webp" alt="Gold phone icon for contacting the gym by telephone" width="60" height="60">
+                    <h3>Phone</h3>
+                    <p>+355 123 456 789</p>
+                </div>
+                <hr>
+                <div class="emailcontact">
+                    <img src="email.webp" alt="Gold envelope icon representing email contact method" width="60" height="60">
+                    <h3>Email</h3>
+                    <p>contact@gym.com</p>
+                </div>
+                <hr>
+                <div class="locationcontact">
+                    <img src="location.webp" alt="Gold location pin icon indicating gym physical address" width="60" height="60">
+                    <h3>Location</h3>
+                    <p>123 Fitness Street, Health City</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
